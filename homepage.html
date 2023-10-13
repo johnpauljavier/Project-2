@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylehome.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-7 text-center">
+                <div class="card bg-transparent shadow border-success">
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <h1 class="text-white">Number Guessing Game 🎮</h1>
+                            <span class="text-white">Test your luck to guess the number! 🔢</span>
+                            <a href="index.html"><button class="btn btn-primary">Start Game</button></a>
+                            <div>
+                                <button id="instructions" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Instructions
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="modalInstructions">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title fw-bold" id="exampleModalLongTitle">🎮Game Instructions</h5>
+                                          <button type="button" id="closeInstruction" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <ol>
+                                            <li>Guess the number by inputting a number inside of the textbox</li>
+                                            <li>The number to guess are ranging from <strong>1</strong> to <strong>100</strong></li>
+                                            <li>Click <strong>CHECK</strong> button, to examine the number.</li>
+                                            <li>You only have 10 chances to guess the number. So wish you luck! 😁</li>
+                                          </ol>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptmodal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
